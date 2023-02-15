@@ -51,6 +51,8 @@ social:
 
 google_site_verification:               # fill in to your verification string
 
+gems:
+  - jekyll-seo-tag
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
