@@ -86,6 +86,7 @@ img {
 
   &[data-src] {
     &.lazyloaded {
+      z-index: 1;
       -webkit-animation: fade-in 0.4s ease-in;
       animation: fade-in 0.4s ease-in;
     }
@@ -131,25 +132,29 @@ blockquote {
   color: var(--blockquote-text-color);
 
   &[class^="prompt-"] {
+    display: flex;
     border-left: 0;
-    position: relative;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 1rem;
     color: var(--prompt-text-color);
 
     @extend %rounded;
 
     &::before {
       text-align: center;
-      width: 3rem;
-      position: absolute;
-      left: 0.25rem;
-      margin-top: 0.4rem;
+      width: 1.25rem;
+      margin-right: 0.75rem;
+      position: relative;
+      top: 0.4rem;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
     }
 
-    > p:last-child {
-      margin-bottom: 0;
+    > div {
+      max-width: calc(100% - 2rem);
+
+      > :last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -698,7 +703,10 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
+  // background: var(--sidebar-bg);
+  background: url("/assets/img/profile_background_rainbow.jpg");
+  background-size: 100% 100%;
+  background-position: center;
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -750,6 +758,7 @@ $sidebar-display: "sidebar-display";
     }
   } /* #avatar */
 
+  // 타이틀 폰트 설정
   .site-title {
     margin-top: 0.55rem;
 
@@ -759,10 +768,11 @@ $sidebar-display: "sidebar-display";
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      color: rgba(134, 133, 133, 0.99);
+      color: rgba(123, 104, 238, 0.99);;
     }
   }
 
+  // 서브 타이틀 폰트 설정
   .site-subtitle {
     font-size: 95%;
     color: var(--sidebar-muted-color);
@@ -837,7 +847,7 @@ $sidebar-display: "sidebar-display";
 
     @for $i from 1 through $tab-count {
       $offset: $tab-count - $i;
-      $top: (-$offset * $tab-height) + (($tab-height - $tab-cursor-height) * 0.5);
+      $top: -$offset * $tab-height + calc(($tab-height - $tab-cursor-height) / 2);
 
       @if $i < $tab-count {
         > li.active:nth-child(#{$i}),
@@ -1275,6 +1285,7 @@ $sidebar-display: "sidebar-display";
 
     .post-content {
       > blockquote[class^="prompt-"] {
+        @include pl-pr(1.25rem);
         @include ml-mr(-1.25rem);
 
         border-radius: 0;
