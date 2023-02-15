@@ -60,7 +60,7 @@ $(function () {
     observer.observe(document.querySelector(titleSelector));
 
     /* Click title will scroll to top */
-    $topbarTitle.on('click', function () {
+    $topbarTitle.click(function () {
         $("body,html").animate({scrollTop: 0}, 800);
     });
 

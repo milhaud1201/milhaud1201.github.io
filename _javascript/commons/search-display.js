@@ -79,6 +79,9 @@ $(function () {
                     input.val("");
                     visible = false;
                 }
+            },
+            isVisible() {
+                return visible;
             }
         };
 
@@ -88,22 +91,22 @@ $(function () {
         return btnCancel.hasClass("loaded");
     }
 
-    btnSearchTrigger.on('click',function () {
+    btnSearchTrigger.click(function () {
         mobileSearchBar.on();
         resultSwitch.on();
-        input.trigger('focus');
+        input.focus();
     });
 
-    btnCancel.on('click',function () {
+    btnCancel.click(function () {
         mobileSearchBar.off();
         resultSwitch.off();
     });
 
-    input.on('focus',function () {
+    input.focus(function () {
         searchWrapper.addClass("input-focus");
     });
 
-    input.on('focusout', function () {
+    input.focusout(function () {
         searchWrapper.removeClass("input-focus");
     });
 
