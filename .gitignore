@@ -7,13 +7,10 @@
 !.commitlintrc.json
 !.versionrc.json
 !.stylelintrc.json
-.ruby-gemset
-.ruby-version
 
 # bundler cache
 _site
-vendor/.bundle/
-Gemfile
+vendor
 Gemfile.lock
 
 # rubygem
