@@ -1,0 +1,145 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Milhaud</title>
+  <subtitle>I'm Milhaud</subtitle>
+  <updated>2023-02-17T19:07:02+09:00</updated>
+  <author>
+    <name>Milhaud</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023 Milhaud </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>PyCaret 맛보기</title>
+    <link href="http://localhost:4000/posts/%ED%94%BC%EB%A7%88-%EC%9D%B8%EB%94%94%EC%96%B8-with-PyCaret/" rel="alternate" type="text/html" title="PyCaret 맛보기" />
+    <published>2022-11-26T18:23:28+09:00</published>
+  
+    <updated>2022-11-26T18:23:28+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%ED%94%BC%EB%A7%88-%EC%9D%B8%EB%94%94%EC%96%B8-with-PyCaret/</id>
+    <content src="http://localhost:4000/posts/%ED%94%BC%EB%A7%88-%EC%9D%B8%EB%94%94%EC%96%B8-with-PyCaret/" />
+    <author>
+      <name>Milhaud</name>
+    </author>
+
+  
+    
+    <category term="Programming" />
+    
+    <category term="Machine Learning" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      피마 인디언 데이터셋 with PyCaret
+
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import koreanize_matplotlib
+
+
+Data Load
+피마 인디언 당뇨병 데이터 셋
+
+df_pima = pd.read_csv("http://bit.ly/data-diabetes-csv")
+df_pima.shape
+
+
+(768, 9)
+
+
+PyCaret
+당뇨병 여부 분류 문제 적용시
+
+from pycaret.classification import *
+
+
+setup
+Train data, Test data, Label, Target 등을 설정하는 부분이며, 데이터에 전처리 기법들을 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>정형 데이터의 종류와 시각화(seaborn)</title>
+    <link href="http://localhost:4000/posts/%EC%A0%95%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/" rel="alternate" type="text/html" title="정형 데이터의 종류와 시각화(seaborn)" />
+    <published>2022-08-01T18:23:28+09:00</published>
+  
+    <updated>2022-08-01T18:23:28+09:00</updated>
+  
+    <id>http://localhost:4000/posts/%EC%A0%95%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/</id>
+    <content src="http://localhost:4000/posts/%EC%A0%95%ED%98%95-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%82%B4%ED%8E%B4%EB%B3%B4%EA%B8%B0/" />
+    <author>
+      <name>Milhaud</name>
+    </author>
+
+  
+    
+    <category term="Artificial Intelligence" />
+    
+    <category term="Basic" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      정형 데이터의 종류와 시각화
+
+데이터 시각화를 하기 전, 기본 문법을 숙지해야 한다.
+
+  평균비교 - Bar Chart
+  관계표현 - Scatter Plot
+  분포를 나타낼 때 - Histogram, Density Plot
+  데이터의 구성 - Stacked 100% Bar Chart, Pie Chart
+
+
+DEA를 위해서는 데이터가 가지고 있는 특성을 살펴보고, 이해한 후에 평면적인 데이터에서 주요한 특성을 설득력 있게 드러내는 가장 효과적인 수단이다.
+
+
+
+
+데이터의 종류
+정형 데이터는 크게 수치형 데이터, 범주형 데이터로 나뉜다.
+수치형 데이터 Numerical Data
+
+  연속형 Comtinuous Data
+    
+      값이 연속된 데이터
+      키, 몸무게, 수입
+    
+ ...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+

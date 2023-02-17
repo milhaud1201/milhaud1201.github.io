@@ -269,8 +269,8 @@ i { /* fontawesome icons */
     margin: 0 0.35rem 0.5rem 0;
 
     &:hover {
-      background-color: #2a408e;
-      border-color: #2a408e;
+      background-color: #8E8739;
+      border-color: #8E8739;
       color: #ffffff;
       transition: none;
     }
@@ -540,7 +540,7 @@ i { /* fontawesome icons */
 
     border-bottom: none;
     text-decoration: none;
-    color: #d2603a;
+    color: #EECEF7;
   }
 }
 
@@ -704,7 +704,7 @@ $sidebar-display: "sidebar-display";
   width: $sidebar-width;
   z-index: 99;
   // background: var(--sidebar-bg);
-  background: url("/assets/img/profile_background_rainbow.jpg");
+  background: url("/assets/img/sidebar_background.png");
   background-size: 100% 100%;
   background-position: center;
 
@@ -768,7 +768,7 @@ $sidebar-display: "sidebar-display";
       font-weight: 900;
       font-size: 1.5rem;
       letter-spacing: 0.5px;
-      color: rgba(123, 104, 238, 0.99);;
+      color: #16140F;;
     }
   }
 
@@ -1295,8 +1295,8 @@ $sidebar-display: "sidebar-display";
   }
 
   #avatar > a {
-    width: 5rem;
-    height: 5rem;
+    width: 1rem;
+    height: 1rem;
   }
 
   .site-subtitle {
