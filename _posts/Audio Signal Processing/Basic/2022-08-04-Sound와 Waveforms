@@ -12,7 +12,6 @@ tags: [audio signal, deep learning]		# TAG는 반드시 소문자
 소리가 잘 들리는 것은 물체를 진동시켜 소리가 생성되므로 이러한 물체가 진동하고 진동으로 인해 공기 분자가 진동하고 서로 부딪히면서 기압의 상태를 변화시켜 파동을 만들어 낸다. Air molecules를 통해 한 지점에서 다른 지점으로 에너지를 전달한다. Sound wave나 Mechanical wave가 있을 때, 매개는 형태를 가지며 그 형태는 소리에서 어떤 일이 일어나는 것처럼 보인다.
 -> Pressure plot을 사용하여 이 모든 것을 **시각화**할 수 있다.
 
-## Sound wave
 
 # Waveform
 Pressure plot로 Waveform 이용한 복잡한 Sound를 표현할 수 있다.
@@ -54,6 +53,7 @@ $TOH = 10^{-12}W/M^2$
 $dB(I) = 10 * log_10$
 
 # Loudness 음량
+인간 청각의 지각 정도에 의해 느
 
 # Timbre 음색
 바이올린과 트럼펫은 비슷한 Intensity로 연주하지만 우리가 두 악기의 소리가 다르다고 느끼는 건 음색이 다르기 때문이다.
@@ -73,10 +73,6 @@ $dB(I) = 10 * log_10$
 - 현악기 트레몰로 (주파수가 아닌 진폭의 변화)
 - Periodic variation in amplitude
 - In music, used for expressive purposes
-
-## Timbre recap
-- 다양한 요소의 
-
 
 # Reference
 [MATLAB - 음성 신호의 피크 포락선](https://kr.mathworks.com/help/signal/ref/envelope.html)
