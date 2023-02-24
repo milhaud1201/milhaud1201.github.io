@@ -53,7 +53,7 @@ $TOH = 10^{-12}W/M^2$
 $dB(I) = 10 * log_10$
 
 # Loudness 음량
-인간 청각의 지각 정도에 의해 느
+인간 청각의 지각 정도에 의해 느끼는 소리의 크기(심리량)
 
 # Timbre 음색
 바이올린과 트럼펫은 비슷한 Intensity로 연주하지만 우리가 두 악기의 소리가 다르다고 느끼는 건 음색이 다르기 때문이다.
@@ -75,4 +75,4 @@ $dB(I) = 10 * log_10$
 - In music, used for expressive purposes
 
 # Reference
-[MATLAB - 음성 신호의 피크 포락선](https://kr.mathworks.com/help/signal/ref/envelope.html)
+* [MATLAB - 음성 신호의 피크 포락선](https://kr.mathworks.com/help/signal/ref/envelope.html)
