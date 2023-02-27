@@ -21,7 +21,6 @@ timezone: Asia/Seoul
 # ↓ --------------------------
 
 title: Milhaud  # the main title
-title_searator: "|"
 
 tagline: Hello   # it will display as the sub-title
 
