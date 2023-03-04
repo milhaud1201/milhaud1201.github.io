@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
   <title>Milhaud</title>
-  <subtitle>I'm Milhaud</subtitle>
-  <updated>2023-02-17T19:07:02+09:00</updated>
+  <subtitle>DeepLearning Lover</subtitle>
+  <updated>2023-02-27T16:29:06+09:00</updated>
   <author>
     <name>Milhaud</name>
     <uri>http://localhost:4000/</uri>
@@ -75,6 +75,152 @@ from pycaret.classification import *
 
 setup
 Train data, Test data, Label, Target 등을 설정하는 부분이며, 데이터에 전처리 기법들을 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>API를 활용한 LA의 범죄 사건과 피해자 유형 파악과 3D 인터렉티브 맵 시각화</title>
+    <link href="http://localhost:4000/posts/API%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-LA%EC%9D%98-%EB%B2%94%EC%A3%84-%EC%82%AC%EA%B1%B4%EA%B3%BC-%ED%94%BC%ED%95%B4%EC%9E%90-%EC%9C%A0%ED%98%95-%ED%8C%8C%EC%95%85%EA%B3%BC-3D-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C-%EB%A7%B5-%EC%8B%9C%EA%B0%81%ED%99%94/" rel="alternate" type="text/html" title="API를 활용한 LA의 범죄 사건과 피해자 유형 파악과 3D 인터렉티브 맵 시각화" />
+    <published>2022-08-04T18:23:28+09:00</published>
+  
+    <updated>2023-02-27T14:43:07+09:00</updated>
+  
+    <id>http://localhost:4000/posts/API%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-LA%EC%9D%98-%EB%B2%94%EC%A3%84-%EC%82%AC%EA%B1%B4%EA%B3%BC-%ED%94%BC%ED%95%B4%EC%9E%90-%EC%9C%A0%ED%98%95-%ED%8C%8C%EC%95%85%EA%B3%BC-3D-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C-%EB%A7%B5-%EC%8B%9C%EA%B0%81%ED%99%94/</id>
+    <content src="http://localhost:4000/posts/API%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-LA%EC%9D%98-%EB%B2%94%EC%A3%84-%EC%82%AC%EA%B1%B4%EA%B3%BC-%ED%94%BC%ED%95%B4%EC%9E%90-%EC%9C%A0%ED%98%95-%ED%8C%8C%EC%95%85%EA%B3%BC-3D-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C-%EB%A7%B5-%EC%8B%9C%EA%B0%81%ED%99%94/" />
+    <author>
+      <name>Milhaud</name>
+    </author>
+
+  
+    
+    <category term="Data Science" />
+    
+    <category term="Streamlit" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Stremlit이란?
+데이터 과학자들이 데이터 시각화, 머신러닝 모델링, 웹 애플리케이션 등을 쉽게 만들 수 있도록 도와주는 오픈소스 라이브러리이다. Streamlit을 사용하면 파이썬 코드만으로 웹 애플리케이션을 만들 수 있어서, 데이터 분석과 모델링 결과를 공유하거나 인터랙티브한 대시보드를 만드는 등 다양한 용도로 활용할 수 있다. 애플리케이션은 웹 브라우저에서 실행되며, 파이썬 코드와 함께 작동하기 때문에 개발자들이 쉽게 웹 애플리케이션을 구축할 수 있다.
+
+간단한 사용법 알아보기
+
+# app.py
+import streamlit as st
+
+st.title("Hello world")
+
+터미널에서 아래의 코드를 입력하면 다음과 같이 로컬호스트 서버가 실행된다.
+streamlit run app.py
+...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Sound와 Waveforms</title>
+    <link href="http://localhost:4000/posts/Sound%EC%99%80-Waveforms/" rel="alternate" type="text/html" title="Sound와 Waveforms" />
+    <published>2022-08-04T18:23:28+09:00</published>
+  
+    <updated>2022-08-04T18:23:28+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Sound%EC%99%80-Waveforms/</id>
+    <content src="http://localhost:4000/posts/Sound%EC%99%80-Waveforms/" />
+    <author>
+      <name>Milhaud</name>
+    </author>
+
+  
+    
+    <category term="Audio Signal Processing" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      [Input Representation] Sound와 Waveforms
+
+Sound
+소리가 잘 들리는 것은 물체를 진동시켜 소리가 생성되므로 이러한 물체가 진동하고 진동으로 인해 공기 분자가 진동하고 서로 부딪히면서 기압의 상태를 변화시켜 파동을 만들어 낸다. Air molecules를 통해 한 지점에서 다른 지점으로 에너지를 전달한다. Sound wave나 Mechanical wave가 있을 때, 매개는 형태를 가지며 그 형태는 소리에서 어떤 일이 일어나는 것처럼 보인다.
+-&amp;gt; Pressure plot을 사용하여 이 모든 것을 시각화할 수 있다.
+
+Waveform
+Pressure plot로 Waveform 이용한 복잡한 Sound를 표현할 수 있다.
+
+  어떤 노이즈가 있더라고 음악 전체를 나타...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>ML에서의 오디오 신호 처리 영역</title>
+    <link href="http://localhost:4000/posts/ML%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%94%94%EC%98%A4-%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%98%81%EC%97%AD/" rel="alternate" type="text/html" title="ML에서의 오디오 신호 처리 영역" />
+    <published>2022-08-02T18:23:28+09:00</published>
+  
+    <updated>2022-08-02T18:23:28+09:00</updated>
+  
+    <id>http://localhost:4000/posts/ML%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%94%94%EC%98%A4-%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%98%81%EC%97%AD/</id>
+    <content src="http://localhost:4000/posts/ML%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%94%94%EC%98%A4-%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%98%81%EC%97%AD/" />
+    <author>
+      <name>Milhaud</name>
+    </author>
+
+  
+    
+    <category term="Audio Signal Processing" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      ML에서의 오디오 신호 처리 영역
+
+어떤 문제를 해결 할 수 있는가
+ML에서 Audio digital signal processing은 어떻게 쓰일까?
+
+  Audio classification
+  Speech recognition / speaker verification
+  Audio denoising / audio upsampling
+  Music Information Retrieval
+    
+      Music Instruemnt Classification
+      Mood classification
+      …
+    
+  
+  …
+
+
+먼저 알아야 할 것
+이러한 문제해결을 위해서는 Sound Wave와 Digital to Analog converters 등의 지식이 필요하다.
+
+  Sou...
     </summary>
   
 

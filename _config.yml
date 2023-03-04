@@ -21,11 +21,12 @@ timezone: Asia/Seoul
 # ↓ --------------------------
 
 title: Milhaud  # the main title
+title_searator: "|"
 
 tagline: Hello   # it will display as the sub-title
 
-description: "DeepLearning Lover"                       # used by seo meta and the atom feed
-
+description: >-                       # used by seo meta and the atom feed
+  DeepLearning Lover
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://milhaud1201.github.io/'

@@ -1,11 +1,14 @@
 ---
-title: Jekyll Github 블로그 실습 샘플 with 테디노트
-date: 2023-02-26T09:23:28.272Z
-categories: [Blog Info]
-tags: [blog, jekyll]		# TAG는 반드시 소문자
+title: Jekyll Github 블로그 마크다운 with 테디노트
+date: 2022-11-26T09:23:28.272Z
+categories: [Blog Info, Jekyll]
+tags: [markdown, jekyll]		# TAG는 반드시 소문자
+# toc: true
+# toc_sticky: true
+# toc_label: 목차
 ---
 
-**[공지사항]** [지킬블로그 신규 업데이트 안내 드립니다.](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+<!-- **[공지사항]** [지킬블로그 신규 업데이트 안내 드립니다.](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/) -->
 
 지킬 블로그에 대하여 알아보겠습니다.
 
@@ -15,7 +18,7 @@ tags: [blog, jekyll]		# TAG는 반드시 소문자
 설치형 블로그의 하나. `Ruby`를 기반으로 만들어져 있다.
 
 
-![teddynote]({{site.url}}/images/2021-05-10-first-posting/teddynote.png){: .img-width-half .align-center}
+<!-- ![teddynote]({{site.url}}/images/2021-05-10-first-posting/teddynote.png){: .img-width-half .align-center} -->
 
 
 ## 특징
@@ -40,14 +43,14 @@ tags: [blog, jekyll]		# TAG는 반드시 소문자
 `[버튼입니다](https://google.com){: .btn .btn--danger}`
 
 > 버튼 설정 결과
-[버튼입니다](https://google.com){: .btn .btn--danger}
+`[버튼입니다](https://google.com){: .btn .btn--danger}`
 
 ## 유튜브 동영상 삽입
 
 아래와 같이 간단한 문법으로 유튜브 동영상 삽입이 가능합니다.
 
 > 유튜브 영상 삽입 결과
-{% include video id="ACzFIAOsfpM" provider="youtube" %}
+`{% include video id="ACzFIAOsfpM" provider="youtube" %}`
 
 
 ## 이미지 삽입
@@ -60,3 +63,5 @@ tags: [blog, jekyll]		# TAG는 반드시 소문자
 ## 끝으로
 
 GitHub 블로그 만들기 시리즈를 사랑해 주셔서 감사합니다.
+
+
