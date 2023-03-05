@@ -64,10 +64,6 @@ df_valid = pd.read_csv(VALID_CSV)
 df_train.head()
 ```
 
-
-
-
-
   <div id="df-c9c81121-7a31-4321-8605-3e17caf03290">
     <div class="colab-df-container">
       <div>
@@ -585,7 +581,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=LR)
 fit(model, trainloader, validloader, optimizer)
 ```
 
-
+```
     EPOCH[TRAIN]1/15:   0%|          | 0/25 [00:00<?, ?it/s]
 
 
@@ -715,7 +711,7 @@ fit(model, trainloader, validloader, optimizer)
 
 
     EPOCH[VALID]15/15:   0%|          | 0/7 [00:00<?, ?it/s]
-
+```
 
 # Inference 
 
