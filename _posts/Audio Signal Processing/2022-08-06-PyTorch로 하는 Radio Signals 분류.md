@@ -19,8 +19,8 @@ tags: [audio signal, classification]		# TAG는 반드시 소문자
 !pip install timm
 ```
 
-    Installing collected packages: huggingface-hub, timm
-    Successfully installed huggingface-hub-0.12.1 timm-0.6.12
+Installing collected packages: huggingface-hub, timm  
+Successfully installed huggingface-hub-0.12.1 timm-0.6.12
 
 
 
@@ -306,10 +306,7 @@ df_train.head()
         }
       </script>
     </div>
-  </div>
-
-
-
+</div>
 
 
 ```python
@@ -341,7 +338,7 @@ plt.imshow(image)
 plt.title(label);
 ```  
   
-![classify_radio_signals_0](/_site/assets/img/to/classify_radio_signals_0.png)
+![classify_radio_signals_0](/_site/assets/img/to/RadioSignals0.png)
 
 
 # Declare Spec Augmentations 
@@ -430,7 +427,7 @@ print(label)
 
 
     
-![classify_radio_signals_1](/_site/assets/img/to/classify_radio_signals_1.png)
+![classify_radio_signals_1](/_site/assets/img/to/RadioSignals1.png)
     
 
 

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Milhaud</title>
   <subtitle>DeepLearning Lover</subtitle>
-  <updated>2023-03-05T01:39:57+09:00</updated>
+  <updated>2023-03-06T00:05:14+09:00</updated>
   <author>
     <name>Milhaud</name>
     <uri>http://localhost:4000/</uri>
@@ -75,6 +75,115 @@ from pycaret.classification import *
 
 setup
 Train data, Test data, Label, Target 등을 설정하는 부분이며, 데이터에 전처리 기법들을 ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Time Domain Audio 특징 이해와 구현 with librosa</title>
+    <link href="http://localhost:4000/posts/Time-Domain-Audio-%ED%8A%B9%EC%A7%95-%EC%9D%B4%ED%95%B4%EC%99%80-%EA%B5%AC%ED%98%84-with-librosa/" rel="alternate" type="text/html" title="Time Domain Audio 특징 이해와 구현 with librosa" />
+    <published>2022-08-07T18:23:28+09:00</published>
+  
+    <updated>2022-08-07T18:23:28+09:00</updated>
+  
+    <id>http://localhost:4000/posts/Time-Domain-Audio-%ED%8A%B9%EC%A7%95-%EC%9D%B4%ED%95%B4%EC%99%80-%EA%B5%AC%ED%98%84-with-librosa/</id>
+    <content src="http://localhost:4000/posts/Time-Domain-Audio-%ED%8A%B9%EC%A7%95-%EC%9D%B4%ED%95%B4%EC%99%80-%EA%B5%AC%ED%98%84-with-librosa/" />
+    <author>
+      <name>Milhaud</name>
+    </author>
+
+  
+    
+    <category term="Audio Signal Processing" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Time-domain 특징
+
+  Amplitude envelope (AE)
+  Root-mean-square energy (RMS)
+  Zero-crossing rate (ZCR)
+
+
+Amplitude envelope (AE)
+
+  프레임 내 모든 샘플의 최대 진폭 값
+  음량에 대한 대략적인 정보 제공
+  Outliers에 민감함
+  Onset detection, 음악 장르 분류
+
+
+Root-mean-square energy (RMS)
+
+  프레임에 있는 모든 표본의 RMS
+  음량 표시기
+  AE보다 Outliers에 덜 민감함
+  오디오 세분화, 음악 장르 분류
+
+
+Zero-crossing rate (ZCR)
+
+  타악기 소리와 음조 인식
+  Monophonic pitch 단음 음조 추정
+  음성...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>PyTorch로 하는 Radio Signals 분류</title>
+    <link href="http://localhost:4000/posts/PyTorch%EB%A1%9C-%ED%95%98%EB%8A%94-Radio-Signals-%EB%B6%84%EB%A5%98/" rel="alternate" type="text/html" title="PyTorch로 하는 Radio Signals 분류" />
+    <published>2022-08-06T18:23:28+09:00</published>
+  
+    <updated>2023-03-05T22:07:53+09:00</updated>
+  
+    <id>http://localhost:4000/posts/PyTorch%EB%A1%9C-%ED%95%98%EB%8A%94-Radio-Signals-%EB%B6%84%EB%A5%98/</id>
+    <content src="http://localhost:4000/posts/PyTorch%EB%A1%9C-%ED%95%98%EB%8A%94-Radio-Signals-%EB%B6%84%EB%A5%98/" />
+    <author>
+      <name>Milhaud</name>
+    </author>
+
+  
+    
+    <category term="Audio Signal Processing" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      개요
+
+  이번 테스크에서는 Sepectrogram이 무엇인지 알 수 있다.
+  Sepectrogram의 이미지가 입력값으로 주어진다. 오디오가 있을 때마다 파일 또는 오디오 신호를 Sepectrogram을 사용하여 나타낸다.
+  이론적인 부분에서, Covolutional Neural Network의 작동과 Covolutional Neural Network가 무엇인지 분명히 한다.
+  Optimization이 어떻게 작동하는지, Gradient decent나 adam과 같은 최적화 유형을 알아야 한다.
+  Python 프로그래밍과 PyTorch의 기본기가 명확해야 한다.
+
+
+Imports
+
+!pip install timm
+
+
+Installing collected packages: huggingface-...
     </summary>
   
 
@@ -160,104 +269,6 @@ st.title("Hello world")
 터미널에서 아래의 코드를 입력하면 다음과 같이 로컬호스트 서버가 실행된다.
 streamlit run app.py
 ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Sound와 Waveforms</title>
-    <link href="http://localhost:4000/posts/Sound%EC%99%80-Waveforms/" rel="alternate" type="text/html" title="Sound와 Waveforms" />
-    <published>2022-08-04T18:23:28+09:00</published>
-  
-    <updated>2022-08-04T18:23:28+09:00</updated>
-  
-    <id>http://localhost:4000/posts/Sound%EC%99%80-Waveforms/</id>
-    <content src="http://localhost:4000/posts/Sound%EC%99%80-Waveforms/" />
-    <author>
-      <name>Milhaud</name>
-    </author>
-
-  
-    
-    <category term="Audio Signal Processing" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      [Input Representation] Sound와 Waveforms
-
-Sound
-소리가 잘 들리는 것은 물체를 진동시켜 소리가 생성되므로 이러한 물체가 진동하고 진동으로 인해 공기 분자가 진동하고 서로 부딪히면서 기압의 상태를 변화시켜 파동을 만들어 낸다. Air molecules를 통해 한 지점에서 다른 지점으로 에너지를 전달한다. Sound wave나 Mechanical wave가 있을 때, 매개는 형태를 가지며 그 형태는 소리에서 어떤 일이 일어나는 것처럼 보인다.
--&amp;gt; Pressure plot을 사용하여 이 모든 것을 시각화할 수 있다.
-
-Waveform
-Pressure plot로 Waveform 이용한 복잡한 Sound를 표현할 수 있다.
-
-  어떤 노이즈가 있더라고 음악 전체를 나타...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>ML에서의 오디오 신호 처리 영역</title>
-    <link href="http://localhost:4000/posts/ML%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%94%94%EC%98%A4-%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%98%81%EC%97%AD/" rel="alternate" type="text/html" title="ML에서의 오디오 신호 처리 영역" />
-    <published>2022-08-02T18:23:28+09:00</published>
-  
-    <updated>2022-08-02T18:23:28+09:00</updated>
-  
-    <id>http://localhost:4000/posts/ML%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%94%94%EC%98%A4-%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%98%81%EC%97%AD/</id>
-    <content src="http://localhost:4000/posts/ML%EC%97%90%EC%84%9C%EC%9D%98-%EC%98%A4%EB%94%94%EC%98%A4-%EC%8B%A0%ED%98%B8-%EC%B2%98%EB%A6%AC-%EC%98%81%EC%97%AD/" />
-    <author>
-      <name>Milhaud</name>
-    </author>
-
-  
-    
-    <category term="Audio Signal Processing" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      ML에서의 오디오 신호 처리 영역
-
-어떤 문제를 해결 할 수 있는가
-ML에서 Audio digital signal processing은 어떻게 쓰일까?
-
-  Audio classification
-  Speech recognition / speaker verification
-  Audio denoising / audio upsampling
-  Music Information Retrieval
-    
-      Music Instruemnt Classification
-      Mood classification
-      …
-    
-  
-  …
-
-
-먼저 알아야 할 것
-이러한 문제해결을 위해서는 Sound Wave와 Digital to Analog converters 등의 지식이 필요하다.
-
-  Sou...
     </summary>
   
 
