@@ -138,7 +138,7 @@ plt.title("Duke Ellington")
 plt.show()
 ```  
 
-![TimeDomain0](/_site/assets/img/to/TimeDomain0.png)
+![TimeDomain0](/assets/img/to/TimeDomain0.png)
 
 # 1. Extracting the amplitude envelope feature from scratch
 ## Calculating amplitude envelope
@@ -222,7 +222,7 @@ plt.title("Duke Ellington")
 
 plt.show()
 ```
-![TimeDomain1](/_site/assets/img/to/TimeDomain1.png)
+![TimeDomain1](/assets/img/to/TimeDomain1.png)
 
 
 # 2. Extracting Root-Mean Square Energy
@@ -275,7 +275,7 @@ plt.title("Duke Ellington")
 
 plt.show()
 ```
-![TimeDomain2](/_site/assets/img/to/TimeDomain2.png)
+![TimeDomain2](/assets/img/to/TimeDomain2.png)
 
 ## RMSE from scratch
 
@@ -325,7 +325,7 @@ plt.title("Duke Ellington")
 
 plt.show()
 ```
-![TimeDomain3](/_site/assets/img/to/TimeDomain3.png)
+![TimeDomain3](/assets/img/to/TimeDomain3.png)
 
 # 3. Extracting Zero-Crossing Rate from Audio
 
@@ -356,7 +356,7 @@ plt.plot(t, zcr_duke, color="b")
 plt.ylim(0, 1)
 plt.show()
 ```
-![TimeDomain4](/_site/assets/img/to/TimeDomain4.png)
+![TimeDomain4](/assets/img/to/TimeDomain4.png)
 
 ## ZCR: Voice vs Noise
 
@@ -409,7 +409,7 @@ plt.plot(t, zcr_noise, color="r")
 plt.ylim(0, 1)
 plt.show()
 ```
-![TimeDomain5](/_site/assets/img/to/TimeDomain5.png)
+![TimeDomain5](/assets/img/to/TimeDomain5.png)
 
 
 # Reference

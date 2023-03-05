@@ -338,7 +338,7 @@ plt.imshow(image)
 plt.title(label);
 ```  
   
-![classify_radio_signals_0](/_site/assets/img/to/RadioSignals0.png)
+![classify_radio_signals_0](/assets/img/to/RadioSignals0.png)
 
 
 # Declare Spec Augmentations 
@@ -427,7 +427,7 @@ print(label)
 
 
     
-![classify_radio_signals_1](/_site/assets/img/to/RadioSignals1.png)
+![classify_radio_signals_1](/assets/img/to/RadioSignals1.png)
     
 
 
