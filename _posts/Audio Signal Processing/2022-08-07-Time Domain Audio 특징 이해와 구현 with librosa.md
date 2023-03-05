@@ -370,14 +370,14 @@ noise_file = "noise.wav"
 ```python
 ipd.Audio(voice_file)
 ```
-<audio src="https://docs.google.com/uc?export=open&id=1Mo10gbImObYRdbsr80y4DeGce3Se4k-Y" controls preload>
+<audio src="https://docs.google.com/uc?export=open&id=1BjYJWW0F7ZCj8SPfV3mf2nL951faVBs3" controls preload>
 <p>Your browser does not support the audio element.</p>
 </audio>
 
 ```python
 ipd.Audio(noise_file)
 ```
-<audio src="https://docs.google.com/uc?export=open&id=1Mo10gbImObYRdbsr80y4DeGce3Se4k-Y" controls preload>
+<audio src="https://docs.google.com/uc?export=open&id=17xNPjXX-HSpNJUzCejE_SHkr8bRi7x28" controls preload>
 <p>Your browser does not support the audio element.</p>
 </audio>
 
