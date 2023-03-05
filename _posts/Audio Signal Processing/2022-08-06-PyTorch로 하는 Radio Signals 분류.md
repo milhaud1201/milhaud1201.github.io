@@ -38,17 +38,6 @@ from torchvision import transforms as T
 import timm
 ```
 
-
-```python
-from google.colab import drive
-drive.mount('/content/drive')
-```
-
-    Mounted at /content/drive
-
-
-![](Untitled-design.png)
-
 # Configurations
 
 ```python
