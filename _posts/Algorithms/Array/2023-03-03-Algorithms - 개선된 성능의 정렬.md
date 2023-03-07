@@ -19,7 +19,7 @@ tags: [algorithms, array]		# TAG는 반드시 소문자
 
 ## 합병 정렬
 
-> 시간복잡도 - $O(n log n)$ 안정적, 제자리 정렬이 아님
+> 시간복잡도 - O(n log n) 안정적, 제자리 정렬이 아님
 
 ![Alt text](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
 
@@ -67,7 +67,7 @@ merge_sort(arr)
 
 ## 퀵 정렬
 
-> 시간복잡도 - 평균/최선: $O(n log n)$  최악: $O(n^2)$ 불안정적, 제자리
+> 시간복잡도 - 평균/최선: O(n log n)  최악: O(n^2) 불안정적, 제자리
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7BDzle2n47c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -123,7 +123,7 @@ pivot: `9`
 
 # 2. 힙 정렬
 
-> 시간복잡도 - $O(n log n)$ 안정적, 제자리
+> 시간복잡도 - O(n log n) 안정적, 제자리
 
 각 노드의 값은 자신의 자식 노드의 값보다 크거나 같은 **완전 이진 트리**이다. 일차원 배열로 구현하면 자식 노드 및 부모 노드로의 접근이 용이하다. 초기 힙을 구축한 후, 최댓값 삭제 및 힙으로의 재구성 과정을 반복한다.
 * **초기 힙 구축 방법**
@@ -135,7 +135,7 @@ pivot: `9`
 
 # 3. 계수 정렬
 
-> 시간복잡도 - $O(n)$ 안정적, 제자리 정렬이 아님
+> 시간복잡도 - O(n) 안정적, 제자리 정렬이 아님
 
 주어진 원소 중에서 자신보다 작거나 같은 값을 갖는 **원소의 개수**를 계산하여 정렬 위치를 찾아 정렬하는 방식이다. 입력 원소의 값이 **어떤 작은 정수 범위 내**에 있다는 것을 알고 있는 경우에만 적용 가능하다.
 
