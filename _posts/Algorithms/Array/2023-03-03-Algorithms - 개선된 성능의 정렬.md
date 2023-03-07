@@ -69,7 +69,8 @@ merge_sort(arr)
 
 > 시간복잡도 - 평균/최선: $O(n log n)$  최악: $O(n^2)$ 불안정적, 제자리
 
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=7BDzle2n47c" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7BDzle2n47c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 배열의 첫 번째 원소를 **피벗**으로 정한 후 분할 함수 partition()을 통해 왼쪽 부분배열과 오른쪽 부분배열로 **분할**한다. 피벗 앞에는 피벗보다 값이 작은 모든 원소들이 온다. 분할을 마친 뒤 피벗은 더 이상 움직이지 않는다. 분할된 두 개의 작은 리스트에 대해 **재귀**적으로 이 과정을 반복한다.
 
@@ -103,18 +104,18 @@ arr = [7,5,9,0,3,1,6,2,4,8]
 quick_sort(arr, 0, 9)
 ```
 
-pivot: `7`
-[**7**, 5, 4, 0, 3, 1, 6, 2, 9, 8]
-pivot: `2`
-[**2**, 5, 4, 0, 3, 1, 6, 7, 9, 8]
-pivot: `0`
-[**0**, 1, 2, 4, 3, 5, 6, 7, 9, 8]
-pivot: `4`
-[0, 1, 2, **4**, 3, 5, 6, 7, 9, 8]
-pivot: `5`
-[0, 1, 2, 3, 4, **5**, 6, 7, 9, 8]
-pivot: `9`
-[0, 1, 2, 3, 4, 5, 6, 7, **9**, 8]
+pivot: `7`  
+[**7**, 5, 4, 0, 3, 1, 6, 2, 9, 8]  
+pivot: `2`  
+[**2**, 5, 4, 0, 3, 1, 6, 7, 9, 8]  
+pivot: `0`  
+[**0**, 1, 2, 4, 3, 5, 6, 7, 9, 8]  
+pivot: `4`  
+[0, 1, 2, **4**, 3, 5, 6, 7, 9, 8]  
+pivot: `5`  
+[0, 1, 2, 3, 4, **5**, 6, 7, 9, 8]  
+pivot: `9`  
+[0, 1, 2, 3, 4, 5, 6, 7, **9**, 8]  
 
 [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
