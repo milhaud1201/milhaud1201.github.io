@@ -138,16 +138,7 @@ image = pipeline(prompt, generator=generator).images[0]
 image
 ```
 
-
-      0%|          | 0/50 [00:00<?, ?it/s]
-
-
-
-
-
-    
-![png](Hugging%20Face%20Using%20Stable%20Diffusion%20Scheduler_files/Hugging%20Face%20Using%20Stable%20Diffusion%20Scheduler_13_1.png)
-    
+![Image Alt text](/assets/img/to/StableDiffusionScheduler1.png)
 
 
 
@@ -217,16 +208,8 @@ generator = torch.Generator(device="cuda").manual_seed(8)
 image = pipeline(prompt, generator=generator).images[0]
 image
 ```
-
-
-      0%|          | 0/50 [00:00<?, ?it/s]
-
-
-
-
-
-    
-![png](Hugging%20Face%20Using%20Stable%20Diffusion%20Scheduler_files/Hugging%20Face%20Using%20Stable%20Diffusion%20Scheduler_21_1.png)
+ 
+![Image Alt text](/assets/img/to/StableDiffusionScheduler2.png)
     
 
 
@@ -244,15 +227,7 @@ image = pipeline(prompt, generator=generator).images[0]
 image
 ```
 
-
-      0%|          | 0/50 [00:00<?, ?it/s]
-
-
-
-
-
-    
-![png](Hugging%20Face%20Using%20Stable%20Diffusion%20Scheduler_files/Hugging%20Face%20Using%20Stable%20Diffusion%20Scheduler_23_1.png)
+![Image Alt text](/assets/img/to/StableDiffusionScheduler3.png)
     
 
 
