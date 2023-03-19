@@ -1,5 +1,5 @@
 ---
-title: [Stable Diffusion] Hugging Face에서 다른 Scheduler 사용하기
+title: Stable Diffusion - Hugging Face에서 다른 Scheduler 사용하기
 date: 2022-10-01T09:23:28.272Z
 categories: [Generative AI]
 tags: [generative ai, stable diffusion]		# TAG는 반드시 소문자
