@@ -4,9 +4,11 @@ date: 2022-10-01T09:23:28.272Z
 categories: [Generative AI]
 tags: [generative ai, stable diffusion]		# TAG는 반드시 소문자
 ---
+
 <a target="_blank" href="https://colab.research.google.com/drive/1fCSlwJO6dsoXvzfqSxdqdcQtBPb9R0hF?usp=share_link">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
+
 # Schedulers
 
 **Stable diffusion**은 일반적으로 노이즈에서 덜 노이즈가 많은 샘플로의 순방향 패스를 정의하는 반면,  
