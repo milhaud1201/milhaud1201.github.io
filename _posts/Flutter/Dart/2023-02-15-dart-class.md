@@ -11,7 +11,7 @@ tags: [flutter, dart]		# TAG는 반드시 소문자
 # Classes
 Dart에서 작성하는 거의 모든 코드는 클래스에 포함된다. 클래스는 `object` 즉, 만들 수 있는 개체를 말한다. 개체 자체는 특정 데이터와 논리는 가지고 있다.
 
-### 1. Constructors
+## Constructors
 
 class와 동일한 이름을 가진 함수를 생성하여 constructor를 선언한다. 이때 선택적으로, **Named constructors**에 설명된 additionla identifier를 추가할 수 있다.
 
@@ -50,7 +50,7 @@ class Player {
 ```
 
 
-### 2. Named constructors
+## Named constructors
 
 [Named constructor](https://dart.dev/language/constructors#named-constructors)를 사용하여 클래스에 대한 여러 constructors를 구현하거나 추가적인 명확성을 제공한다.
 
@@ -71,7 +71,7 @@ class Point {
 }
 ```
 
-### API로 데이터를 받을 때 클래스로 구현
+## API로 데이터를 받을 때 클래스로 구현
 
 json format 같은 데이터를 받으면 Flutter Dart class로 바꿔야 한다. 
 API로부터 여러 Player가 들어있는 목록을 받는다고 가정하였다.
@@ -107,7 +107,7 @@ void main() {
 
 	Hi my name is dokyeong
 
-### 3. Enumerated types
+## Enumerated types
 
 [Enumerated types](https://dart.dev/language/enum)은 enumerations이나 enums라고 부른다. Enum는 고정된 상수 값을 나타내는데 사용되는 특별한 종류의 클래스이다. 모든 enums는 자동으로 Enum class를 확장한다. 따라서, subclassed, implemented, mixed in, 명시적으로 인스턴스화 할 수 없다.
 
@@ -128,7 +128,7 @@ if (favoriteColor == Color.blue) {
 }
 ```
 
-### 4. Abstract Clasees
+## Abstract Clasees
 
 추상화 클래스는 다른 클래스들이 직접 구현해야하는 특정 필드와 메소드를 모아놓은 클래스이다. 인스턴스화를 할 수 없는 추상화 클래스를 정의하기 위해 **abstract** modifier를 이용한다. 메소드의 이름과 반환 타입과 상속받는 모든 클래스가 가지고 있어야 하는 메소드를 정의하고 있다. 
 
@@ -166,7 +166,7 @@ class SmartTelevision extends Television {
 }
 ```
 
-### 5. Inheritance
+## Inheritance
 
 Dart에는 단일 상속 [single inheritance](https://dart.dev/language)이 있다. 여기서 super 키워드는 부모 클래스의 name 필드에 직접적으로 접근하는 방식이다.
 
@@ -217,7 +217,7 @@ void main() {
 }
 ```
 
-### 6. Mixins
+## Mixins
 
 Mixin은 생성자가 없는 클래스를 의미한다. 여러 클래스 계층 구조에서 코드를 재사용하는 방법이다.
 
