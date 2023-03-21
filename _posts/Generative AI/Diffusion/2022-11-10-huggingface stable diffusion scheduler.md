@@ -5,7 +5,7 @@ categories: [Generative AI]
 tags: [generative ai, stable diffusion]		# TAG는 반드시 소문자
 ---
 
-<a target="_blank" href="https://colab.research.google.com/drive/1fCSlwJO6dsoXvzfqSxdqdcQtBPb9R0hF?usp=share_link"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+[![huggingface-diffusion scheduler](/assets/img/colab-badge.svg)](https://colab.research.google.com/drive/1fCSlwJO6dsoXvzfqSxdqdcQtBPb9R0hF?usp=share_link)
 
 # Schedulers
 
@@ -284,4 +284,4 @@ images = pipeline.numpy_to_pil(np.asarray(images.reshape((num_samples,) + images
 ```
 
 # Reference
-<a>https://huggingface.co/docs/diffusers/using-diffusers/schedulers#access-the-scheduler</a>
+https://huggingface.co/docs/diffusers/using-diffusers/schedulers#access-the-scheduler

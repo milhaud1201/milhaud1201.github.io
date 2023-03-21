@@ -250,6 +250,6 @@ class Maestro extends Person with Musical, Aggressive, Demented {
 extends는 확장한 그 클래스는 부모 클래스가 되고, 자식 클래스는 super를 통해 부모 클래스에 접근할 수 있다. mixin의 with은 단순히 mixin 내부의 속성과 메소드를 가져오는 것이다.
 
 # Reference
-https://dart.dev/language
-https://nomadcoders.co/dart-for-beginners  
-https://brunch.co.kr/brunchbook/dartforflutter
+https://dart.dev/language  
+https://nomadcoders.co/dart-for-beginners   
+https://brunch.co.kr/brunchbook/dartforflutter  
