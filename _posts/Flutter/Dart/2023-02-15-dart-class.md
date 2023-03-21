@@ -5,7 +5,7 @@ categories: [Flutter, Dart]
 tags: [flutter, dart]		# TAG는 반드시 소문자
 ---
 
-빠르게 서비스를 구현하기 위해서 어떤 프레임워크를 사용할까 서칭하다가 Flutter를 공부하고 있는데 HTML, CSS, Javascript가 필요 없이 오로지 Dart 언어를 사용하기 때문에 Dart를 꼭 알아야 한다.
+빠르게 서비스를 구현하기 위해서 어떤 프레임워크를 사용할까 서칭하다가 Flutter를 공부하고 있다. Flutter는 HTML, CSS, Javascript가 필요없이 오로지 Dart 언어를 사용하기 때문에 Dart를 꼭 알아야 한다.
 
 해당 포스터는 dart.dev에서 Language tour docs와 노마드코더의 Dart 강의를 참고하였다.
 
@@ -250,6 +250,6 @@ class Maestro extends Person with Musical, Aggressive, Demented {
 extends는 확장한 그 클래스는 부모 클래스가 되고, 자식 클래스는 super를 통해 부모 클래스에 접근할 수 있다. mixin의 with은 단순히 mixin 내부의 속성과 메소드를 가져오는 것이다.
 
 # Reference
-https://dart.dev/language  
-https://nomadcoders.co/dart-for-beginners   
+https://dart.dev/language   
+https://nomadcoders.co/dart-for-beginners    
 https://brunch.co.kr/brunchbook/dartforflutter  
