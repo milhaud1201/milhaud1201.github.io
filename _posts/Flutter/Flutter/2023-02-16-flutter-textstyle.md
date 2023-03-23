@@ -1,5 +1,5 @@
 ---
-title: [Flutter] TextStyle 사용자 지정 Google Fonts로 바꾸기
+title: Flutter TextStyle 사용자 지정 Google Fonts로 바꾸기
 date: 2023-02-16T09:23:28.272Z
 categories: [Flutter, Flutter]
 tags: [flutter, googlefonts]		# TAG는 반드시 소문자
