@@ -49,5 +49,60 @@ flutter:
 # 폰트 변경 전과 후
 왼쪽이 변경 전, 오른쪽이 변경 후 이다.
 
-![image.jpg1](/assets/img/to/flutter_textstyle_before.png) | ![image.jpg2](/assets/img/to/flutter_textstyle_after.png)
---- | --- | 
+![image.jpg1](/assets/img/to/flutter_textstyle_before.png) | ![image.jpg2](/assets/img/to/flutter_textstyle_after.png) |
+| --- | --- | 
+
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(App());
+}
+
+class App extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color(0xFF181818),
+        body: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 40),
+          child: Column(
+            children: [
+              SizedBox(
+                height: 80,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Generate',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 38,
+                            fontFamily: 'AzeretMono',
+                            fontWeight: FontWeight.w600),
+                      ),
+                      Text('images',
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.8),
+                            fontSize: 38,
+                            fontFamily: 'AzeretMono',
+                          )),
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+```
