@@ -5,10 +5,7 @@ categories: [Flutter, Flutter]
 tags: [flutter, googlefonts]		# TAG는 반드시 소문자
 ---
 
-Flutter에서는 Text widget에서 문자의 스타일을 바꿀 수 있다. Text widget은 단일 스타일의 텍스트 문자열을 표시한다.
-
-Text widget에는 [TextStyle class](https://api.flutter.dev/flutter/painting/TextStyle-class.html)로 텍스트의 형식을 지정하고 폰트 스타일을 지정할 수 있다. 
-
+Flutter에서는 Text widget에서 문자의 스타일을 바꿀 수 있다. Text widget은 단일 스타일의 텍스트 문자열을 표시한다. Text widget에는 [TextStyle class](https://api.flutter.dev/flutter/painting/TextStyle-class.html)로 텍스트의 형식을 지정하고 폰트 스타일을 지정할 수 있다. 
 Google Fonts를 이용해 Custom Font를 선언하는 방법을 알아보자.
 
 # Google Fonts에서 원하는 폰트 다운로드
@@ -16,7 +13,6 @@ Google Fonts를 이용해 Custom Font를 선언하는 방법을 알아보자.
 [구글 폰트](https://fonts.google.com/)는 구글에서 제공하는 오픈 소스 폰트 라이브러리이다. 웹 페이지 또는 앱에서 사용할 수 있는 무료 폰트를 제공한다. 
 
 [Google Fonts](https://fonts.google.com/)에서 원하는 폰트를 다운로드 받는다.
-
 ![google_fonts](/assets/img/to/google_fonts.png)
 
 다운받은 .ttf 파일은 fonts 폴더를 만든 후 안에 넣어준다.
@@ -52,5 +48,6 @@ flutter:
 
 # 폰트 변경 전과 후
 왼쪽이 변경 전, 오른쪽이 변경 후 이다.
-![image.jpg1](/assets/img/to/flutter_textstyle_before.png) |![image.jpg2](/assets/img/to/flutter_textstyle_after.png)
+
+![image.jpg1](/assets/img/to/flutter_textstyle_before.png) | ![image.jpg2](/assets/img/to/flutter_textstyle_after.png)
 --- | --- | 
