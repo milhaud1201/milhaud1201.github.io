@@ -49,9 +49,12 @@ flutter:
 # 폰트 변경 전과 후
 왼쪽이 변경 전, 오른쪽이 변경 후 이다.
 
-![image.jpg1](/assets/img/to/flutter_textstyle_before.png) | ![image.jpg2](/assets/img/to/flutter_textstyle_after.png) |
-| --- | --- | 
-
+<table border="0">
+ <tr>
+    <td><img src="/assets/img/to/flutter_textstyle_before.png"></td>
+    <td><img src="/assets/img/to/flutter_textstyle_after.png"></td>
+ </tr>
+</table>
 
 ```dart
 import 'package:flutter/material.dart';
