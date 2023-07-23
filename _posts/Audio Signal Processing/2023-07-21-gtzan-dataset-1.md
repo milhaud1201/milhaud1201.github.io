@@ -1,5 +1,5 @@
 ---
-title: [ML] GTZAN dataset으로 음악 장르 분류 - 1
+title: GTZAN dataset으로 음악 장르 분류 - 1
 date: 2023-07-21T09:23:28.272Z
 categories: [Flutter, Dart]
 tags: [flutter, dart]		# TAG는 반드시 소문자
