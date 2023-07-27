@@ -20,7 +20,7 @@ tags: [flutter]		# TAG는 반드시 소문자
 
 ## 기본 SDK의 MaterialApp, Scaffold를 활용한 Hello, Flutter 만들기
 
-![image](/assets/img/to/flutter_material_widget.png){: width="100" height="100"}
+![image](/assets/img/to/flutter_material_widget.png){: width="200" height="200"}
 
 
 ```dart
