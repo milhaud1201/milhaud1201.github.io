@@ -73,4 +73,4 @@ class TestWidget extends StatelessWidget {
 ```
 
 ## Keynote
-Appbar 위젯에서 title,
+Appbar 위젯에서 title 텍스트를 입력하고 conterTitle을 false로 지정하면 기본 가운데 정렬을 오른쪽 정렬로 바꿔준다.  
