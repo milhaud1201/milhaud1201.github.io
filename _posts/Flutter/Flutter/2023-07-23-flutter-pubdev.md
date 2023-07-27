@@ -6,7 +6,7 @@ tags: [flutter]		# TAG는 반드시 소문자
 ---
 
 ### pub.dev
-* https://pub.dev/
+* [https://pub.dev/](https://pub.dev/)
 ![Alt text](/assets/img/to/pub_dev_home.png)
 
 ### keyword
