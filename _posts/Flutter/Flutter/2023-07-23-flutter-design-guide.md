@@ -13,10 +13,10 @@ Flutter는 Google에서 주도적으로 개발하고 있는 프레임워크라 M
 
 ## Material Design
 https://m3.material.io/
-![Alt text](img/image-2.png)
+![Alt text](/assets/img/to/material_design_site.png)
 * 톤앤매너를 지키기 위해 Style을 정의하고 잘 지켜줘야 한다.
 
 ## Material Components
 https://docs.flutter.dev/ui/widgets
-![Alt text](img/image-1.png)
+![Alt text](/assets/img/to/flutter_material_componets_widgets.png)
 * 많은 위젯을 알고 있는 것이 flutter로 개발할 때 도움이 된다.

@@ -7,7 +7,7 @@ tags: [flutter]		# TAG는 반드시 소문자
 
 ### pub.dev
 * https://pub.dev/
-![Alt text](img/image.png)
+![Alt text](/assets/img/to/pub_dev_home.png)
 
 ### keyword
 * 기본 SDK
@@ -20,7 +20,7 @@ tags: [flutter]		# TAG는 반드시 소문자
 
 ## 기본 SDK의 MaterialApp, Scaffold를 활용한 Hello, Flutter 만들기
 <p align="center">
-    <img src="img/Simulator Screenshot - iPhone 14 Pro Max - 2023-07-27 at 12.09.36.png" alt="drawing" width="200"/>
+    <img src="/Users/milhaud/Desktop/milhaud1201.github.io/assets/img/to/flutter_material_widget.png" alt="drawing" width="200"/>
 </p>
 
 
@@ -31,7 +31,23 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        body: TestWidget()
+        appBar: AppBar(
+          actions: [
+            IconButton(onPressed: () {
+              print("Tab!");
+            }, icon: Icon(Icons.home)),
+            Icon(Icons.play_arrow)
+          ],
+          centerTitle: false,
+          title: Text("This is appbar"),
+        ),
+        body: TestWidget(),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.bug_report),
+          onPressed: () {
+            print("Tab! FAB!");
+          },
+        ),
       ),
     ),
   );
@@ -55,5 +71,7 @@ class TestWidget extends StatelessWidget {
     );
   }
 }
-
 ```
+
+## Keynote
+Appbar 위젯에서 title,
