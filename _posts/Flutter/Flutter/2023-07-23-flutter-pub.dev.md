@@ -2,7 +2,7 @@
 title: Flutter 기본 SDK와 오픈소스 Widget
 date: 2023-07-23T09:23:28.272Z
 categories: [Flutter, Flutter]
-tags: [flutter, googlefonts]		# TAG는 반드시 소문자
+tags: [flutter]		# TAG는 반드시 소문자
 ---
 
 ### pub.dev
