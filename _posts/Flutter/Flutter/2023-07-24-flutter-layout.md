@@ -32,24 +32,25 @@ zip 파일에 아이콘 이미지가 있는데 android와 iOS에 적용될 Asset
 진행하고 있는 Flutter 프로젝트에서 AppIcon.appiconset 내부에 있는 모든 이미지와 json 파일을 지우고 zip 파일 안에 있는 Assets.xcassets 이미지를 붙여넣으면 끝이다.
 ![Alt text](/assets/img/to/flutter_iso_icon.png)
 Xcode에 들어가서 Assets을 확인해보면 잘 적용된 것을 볼 수 있다. 
-![Alt text](image.png)
+![Alt text](/assets/img/to/xcode_flutter.png)
 
 # Android 앱 아이콘 바꾸기
 렌더링 속도를 높이고 aliasing을 줄이기 위한 5개의 mipmap 폴더가 있다. zip 파일 내에 동일한 이름으로 되어있는 폴더를 모두 복사한 후 대치하여 붙여넣기를 하면 된다. 
-![Alt text](image-1.png)
+![Alt text](/assets/img/to/android_icon.png)
 
 ### Error: Not found: dart:ui. flutter/dart:
 Android Studio에서 컴파일하려는데 dart:ui를 못 찾는다는 에러가 났다. 해결 방법은 dart로 컴파일하는 것이 아닌 flutter로 컴파일하면 간단하게 해결된다.
 
-![Alt text](image-2.png)
+![Alt text](/assets/img/to/dart_ui_error.png){: width="150" height="150"}
 
-https://stackoverflow.com/questions/52483773/dartui1-error-not-found-dartui-flutter-dart
+stackoverflow 참고
+[https://stackoverflow.com/questions/52483773/dartui1-error-not-found-dartui-flutter-dart](https://stackoverflow.com/questions/52483773/dartui1-error-not-found-dartui-flutter-dart)
 
 
 더 심도 있는 아이콘을 제공하고 싶다면
 - Android: Adaptive Icon  
-https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive?hl=ko
+[https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive?hl=ko](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive?hl=ko)
 - Android Official Guide   
-https://developer.android.com/distribute/google-play/resources/icon-design-specifications?hl=en
+[https://developer.android.com/distribute/google-play/resources/icon-design-specifications?hl=en](https://developer.android.com/distribute/google-play/resources/icon-design-specifications?hl=en)
 - iOS Official Guide   
-https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons/
+[https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons/](https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons/)
