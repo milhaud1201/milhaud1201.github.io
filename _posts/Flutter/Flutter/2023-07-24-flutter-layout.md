@@ -1,161 +1,55 @@
 ---
-title: Flutter Layouts - Column, Row, SingleChildScrollView
+title: Flutter 앱 아이콘 쉽게 바꾸기 with Midjourney
 date: 2023-07-24T09:23:28.272Z
 categories: [Flutter, Flutter]
-tags: [flutter]		# TAG는 반드시 소문자
+tags: [flutter, icon]		# TAG는 반드시 소문자
 ---
 
-# Layouts in Flutter
-[https://docs.flutter.dev/ui/layout](https://docs.flutter.dev/ui/layout)
+# 준비물
+앱 아이콘 바꾸기 위한 준비물: 1024 * 1024 PNG 이미지
 
-# 1. Placeholder  
+1. 직접 디자인 (포토샵, 일러스트, 아이패드)
+2. 지인 찬스
+3. 크몽, 숨고 디자이너께 외주
+4. appicons.ai, icon.kitchen, Midjourney 서비스 이용
 
-```dart
-class Body extends StatelessWidget {
-  const Body({super.key});
+나는 4개의 옵션 중에서 Midjourney를 활용해서 앱 아이콘 디자인을 만들었다.
 
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder(
-      child: Text("data"),
-    );
-  }
-}
-```
-> StatelessWidget을 처음 만들게 되면 맨 처음 보이는 위젯이 Placeholder이다. 의미는 '이 위치에 어떤 위젯이 올꺼니까 그 위젯의 사이즈만큼 자리를 차지해라' 라는 뜻이다.
+# Midjourney
+프롬프트를 여러 번 해본 후 제일 맘에 들었던 이미지를 선택했다. 앱에 대한 기능 설명을 디테일하게 나열하는 것보다 유저 입장에서의 기능을 입력하면 좀더 원하는 이미지를 얻을 수 있다. 예를 들어, '**It is an app for the function of counting numbers by operating the counter when you shake the phone.**' 보다는 유저가 앱을 사용했을 때의 모습을 대략적으로 '**손으로 잡고 흔드는 장면**'이라고 입력하면 된다.
+### prompt
+**The scene of holding and shaking the phone. flat vector app icon, minimalistic, white background, cute, 2d, 4d**
+![Alt text](/assets/img/to/shake_count_icon.png)
 
-# 2. child 객체의 위치
-![Alt text](/assets/img/to/flutter_child.png)
-flutter에서는 child 속성을 맨 마지막으로 배치하는 것을 권장한다. 아래 `Move chile properties to ends of arguments everywhere in file`을 클릭하면 모든 chile 속성이 각 변수의 맨 끝으로 배치된다.
 
-# 3. Column의 가운데 정렬 - Aligning widgets
-Column은 Center 위젯으로 감싼다고 해서 가운데 정렬이 되지 않는다. Column의 속성 중에서 정렬을 할 수 있는 속성이 따로 존재하기 때문이다. 또한 Column에서는 좌우의 폭을 제한하지 않기 때문에 Container로 감싸야 정렬을 할 수 있다.  
-![row](https://docs.flutter.dev/assets/images/docs/ui/layout/row-diagram.png)
-![column](https://docs.flutter.dev/assets/images/docs/ui/layout/column-diagram.png) 
+# appicon.co
+생성한 이미지를 [https://www.appicon.co/](https://www.appicon.co/) 해당 사이트에 넣어주면 zip 파일로 이미지가 다시 만들어진다.
+![Alt text](/assets/img/to/appicon_shake_app.png)
+zip 파일에 아이콘 이미지가 있는데 android와 iOS에 적용될 Assets.xcassets 형식으로 만들어진 것을 확인할 수 있다.
+![Alt text](/assets/img/to/finder.png)
 
-```dart
-Container(
-      width: double.infinity,
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center
-      )
-)
-```
+# iOS 앱 아이콘 바꾸기
+진행하고 있는 Flutter 프로젝트에서 AppIcon.appiconset 내부에 있는 모든 이미지와 json 파일을 지우고 zip 파일 안에 있는 Assets.xcassets 이미지를 붙여넣으면 끝이다.
+![Alt text](/assets/img/to/flutter_iso_icon.png)
+Xcode에 들어가서 Assets을 확인해보면 잘 적용된 것을 볼 수 있다. 
+![Alt text](image.png)
 
-예를 들어, 위의 코드에서 Column은 상하만 배치할 수 있는 위젯이다. 만약 좌우로 가운데 정렬을 하고 싶다면 Container 위젯으로 감싼 다음에 width를 double.infinity로 선언해주면 된다. Row 일 경우에는 반대로 Row를 Container 위젯으로 감싼 후 height 속성을 선언하면 된다.
+# Android 앱 아이콘 바꾸기
+렌더링 속도를 높이고 aliasing을 줄이기 위한 5개의 mipmap 폴더가 있다. zip 파일 내에 동일한 이름으로 되어있는 폴더를 모두 복사한 후 대치하여 붙여넣기를 하면 된다. 
+![Alt text](image-1.png)
 
-![image](/assets/img/to/flutter_layout.png){: width="200" height="200"}
+### Error: Not found: dart:ui. flutter/dart:
+Android Studio에서 컴파일하려는데 dart:ui를 못 찾는다는 에러가 났다. 해결 방법은 dart로 컴파일하는 것이 아닌 flutter로 컴파일하면 간단하게 해결된다.
 
-Column에서 CrossAxisAlignment.start 해줘도 그 안에 Row는 Row 위젯 안에서 선언한 MainAxisAlignment.center에만 영향을 받으므로 위의 그림과 같이 Column 내부에 Container만 영향을 받는다. 4개의 컨테이너 모두 왼쪽 정렬을 하고 싶으면 Row의 MainAxisAlignment.center를 MainAxisAlignment.start로 바꾸면 된다.
+![Alt text](image-2.png)
 
-```dart
-Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 100,
-                height: 80,
-                color: Colors.red,
-                child: Text("Container 1"),
-              ),
-              Container(
-                width: 100,
-                height: 80,
-                color: Colors.green,
-                child: Text("Container 2"),
-              ),
-              Container(
-                width: 100,
-                height: 80,
-                color: Colors.blue,
-                child: Text("Container 3"),
-              ),
-            ],
-          ),
-        Container(
-          width: 300,
-          height: 120,
-          color: Colors.grey,
-          child: Text("Container 4"),
-        )
-      ],
-    );
-```
+https://stackoverflow.com/questions/52483773/dartui1-error-not-found-dartui-flutter-dart
 
-# 4. 픽셀이 초과할 경우 SingleChildScrollView
-SingleChildScrollView을 좌우, 상하로 컨트롤해서 스크롤을 만들 수 있다. Tap bar에서 자주 쓰인다.
-* 예시  
-  ![scrolling](https://docs.flutter.dev/assets/images/docs/cookbook/effects/ParallaxScrolling.gif)  
-  [https://docs.flutter.dev/cookbook/effects/parallax-scrolling](https://docs.flutter.dev/cookbook/effects/parallax-scrolling)
 
-![image](/assets/img/to/flutter_scrolling.png){: width="200" height="200"}  
-
-Container로 이루어진 Column 축으로 정렬된 위젯들을 SingleChildScrollView 위젯으로 감싸게 되면 화면에서 넘친 픽셀들을 상하로 스크롤하도록 만든다.
-
-반대로 좌우로 스크롤을 만들고 싶다면, Column을 Row로 바꾸고, scrollDirection: Axis.horizontal 속성을 선언한다. Container 안에 width가 double.infinity 선언으로 길이를 무한하게 설정해줬으니 스크롤 할 범위가 너무 길어서 한정된 영역으로 설정해야 한다. height과 동일하게 설정 후 margin을 vertical에서 horizontal로 바꾸면 된다. 
-
-```dart
-SingleChildScrollView(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        // crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          ),
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          ),
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          ),
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          ),
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          ),
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          ),
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          ),
-          Container(
-            color: Colors.grey,
-            width: double.infinity,
-            height: 100,
-            margin: EdgeInsets.symmetric(vertical: 8),
-          )
-        ],
-      ),
-    );
-  ```
+더 심도 있는 아이콘을 제공하고 싶다면
+- Android: Adaptive Icon  
+https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive?hl=ko
+- Android Official Guide   
+https://developer.android.com/distribute/google-play/resources/icon-design-specifications?hl=en
+- iOS Official Guide   
+https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons/
